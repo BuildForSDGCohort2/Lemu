@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Caslon+Display&family=Open+Sans+Condensed:wght@300&family=Srisakdi&display=swap");
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.font-great {
+  font-family: "Great Vibes", cursive;
+}
+
+.font-srisakdi {
+  font-family: "Srisakdi", cursive;
+}
+
+.font-libre {
+  font-family: "Libre Caslon Display", cursive;
+}
+
+.font-open {
+  font-family: "Open Sans Condesed", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.color-primary {
+  color: #003859;
+}
+
+.color-primary-bg {
+  background: #003859;
+}
+
+.color-secondary {
+  color: #00A5C4;
+}
+
+.color-secondary-bg {
+  background: #00A5C4;
+}
+
+.color-third {
+  color: #FFD289;
+}
+
+.color-third-bg {
+  background: #FFD289;
+}
+
+.color-fourth {
+  color: #fff;
+}
+
+.color-fourth-bg {
+  background: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
