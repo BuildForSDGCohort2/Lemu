@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Caslon+Display&family=Open+Sans+Condensed:wght@300&family=Srisakdi&display=swap");
+button, button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.font-poppins {
+  font-family: "Poppins" cursive;
+}
+
+.font-bebas {
+  font-family: "Bebas Neue", cursive;
+}
+
+.font-great {
+  font-family: "Great Vibes", cursive;
+}
+
+.font-srisakdi {
+  font-family: "Srisakdi", cursive;
+}
+
+.font-libre {
+  font-family: "Libre Caslon Display", cursive;
+}
+
+.font-open {
+  font-family: "Open Sans Condesed", cursive;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-16 {
+  font-size: 16px;
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.color-primary {
+  color: #003859;
+}
+
+.color-primary-bg {
+  background: #003859;
+}
+
+.color-secondary {
+  color: #00A5C4;
+}
+
+.color-secondary-bg {
+  background: #00A5C4;
+}
+
+.color-third {
+  color: #FFD289;
+}
+
+.color-third-bg {
+  background: #FFD289;
+}
+
+.color-fourth {
+  color: #fff;
+}
+
+.color-fourth-bg {
+  background: #fff;
+}
+
+/*   Daily Offer Section Template */
+#daily-offer .grid .grid-item {
+  margin-right: 1.2rem;
+  margin-top: 1rem;
+}
+
+/*  popular-category template   */
+#popular .owl-carousel .item .product a {
+  overflow: hidden;
+}
+#popular .owl-carousel .item .product img {
+  transition: transform 0.5s ease;
+}
+#popular .owl-carousel .item .product img:hover {
+  transform: scale(1.1);
+}
+#popular .owl-carousel .owl-nav button {
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#popular .owl-carousel .owl-nav button.owl-prev {
+  left: 0;
+}
+#popular .owl-carousel .owl-nav button.owl-prev span,
+#popular .owl-carousel .owl-nav button.owl-next span {
+  font-size: 35px;
+  color: #003859;
+  padding: 0 1rem;
+}
+#popular .owl-carousel .owl-nav button.owl-prev span {
+  margin-left: -4rem;
+}
+#popular .owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+#popular .owl-carousel .owl-nav button.owl-next span {
+  margin-right: -4rem;
+}
+
+.Searched {
+  margin: auto;
+  position: relative;
+  margin-left: 250px;
+  width: 500px;
+  height: 50px;
+  border: 3px solid transparent;
+  padding: opx 10px;
+  border-radius: 30px;
+  background-color: #eee;
+}
+
+.element {
+  width: 100%;
+  height: 100%;
+}
+
+.search {
+  border: none;
+  height: 100%;
+  width: 93%;
+  padding: 6px 5px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.search:focus {
+  outline: none;
+}
+
+.footer {
+  padding-top: 1px;
+}
+
+/*# sourceMappingURL=style.css.map */

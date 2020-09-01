@@ -1,0 +1,7 @@
+*.exe
+/assests/*.exe
+/css/*.exe
+/js/*.exe
+/sass/*.exe
+/sass/includes/*.exe
+/assests/products/*.exe
