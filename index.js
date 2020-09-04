@@ -5,6 +5,10 @@ $(document).ready(function(){
         dots: true,
         items: 1
     });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5df1086b97821621620dfd3f7d81bd484ec5f806
     // popular owl carousel
     $("#popular .owl-carousel").owlCarousel({
         loop: true,
@@ -22,16 +26,25 @@ $(document).ready(function(){
             }
         }
     });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5df1086b97821621620dfd3f7d81bd484ec5f806
     // isotope filter
     var $grid = $(".grid").isotope({
         itemSelector : '.grid-item',
         layoutMode : 'fitRows'
     });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5df1086b97821621620dfd3f7d81bd484ec5f806
     // filter items on button click
     $(".button-group").on("click", "button", function(){
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue});
     });
+<<<<<<< HEAD
     // Latest
     $("#latest .owl-carousel").owlCarousel({
         loop: true,
@@ -71,5 +84,9 @@ $(document).ready(function(){
             });
         }
     });
+=======
+
+
+>>>>>>> 5df1086b97821621620dfd3f7d81bd484ec5f806
 
 });

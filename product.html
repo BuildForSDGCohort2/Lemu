@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Owl-carousel CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha256-kksNxjDRxd/5+jGurZUJd1sdR2v+ClrCl3svESBaJqw=" crossorigin="anonymous" />
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="/css/all.css" />
+
+    <!-- Custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Lemu | Home </title>
+</head>
+<body>
+    <!-- header section -->
+    <header id="header" >
+        <div class="strip d-flex justify-content-between px-5 py-1 bg-light navbar-expand-md">
+            <p class="text-black-50 m-0">Hi there, new to Lemu<a href="#" class="px-3 boder-right boarder-left text-dark">Sign In</a> or <a href="#" class="px-3 boder-right boarder-left text-dark">Login</a> <a href="#" class="px-3 boder-right boarder-left text-dark">Help and Contact</a></p>
+            <a href="#" class="px-3 boarder-right boarder-left text-dark">Watchlist (0)</a>
+
+                <form action="#" class="font-size-14 font-poppins">
+                    <a class="py-2 rounded-pill bg-warning" href="#">
+                        <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart" aria-hidden="true"></i></span>
+                        <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                    </a>
+                </form>
+ 
+        </div>
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-sm color-fourth-bg navbar-dark ">
+             <a class="navbar-brand text-dark" href="#">Lemu<i class="fa fa-cart-plus font-size-20" aria-hidden="true"></i></a>
+            <form class="Searched" action="#">
+              <div class="element">
+                <input class="search px-2
+                " type="search" name="" placeholder=" Search products, brands and categories" value="" autocomplete="off" required="">
+                <a href="#"><i class="fa fa-search"></i></a>
+              </div>
+              
+            </form>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#" >Categories</a>
+                    </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link text-dark"><i class="fas fa-user font-size-20"></i> My Account <i class="fas fa-chevron-down" aria-hidden="true"></i></a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>     -->
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- header section -->
+
+    <!-- Products -->
+    <div id="products" class="container card py-1">
+        <div class="row">
+          <div class="col-sm-6">
+            <img src="/assests/products/1.jpg" alt="product1" class="img-fluid" style="height: 400px; width: 300px;">
+                    <div class="form-row pt-4 font-size-16 font-poppins">
+                        <div class="col">
+                            <button type="submit" class="btn btn-danger form-control">Proceed to buy</button>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-warning form-control">Add to cart</button>
+                        </div>
+                    </div>
+          </div>
+          <div class="col-sm-6 py-3">
+            <h5 class="font-poppins font-size-20">Blender</h5>
+            <small>by LG</small>
+            <hr class="m-0">
+
+            <!-- price -->
+            <table class="my-3">
+                <tr class="font-poppins font-size-14">
+                    <td>Was </td>
+                    <td><strike>$50</strike></td>
+                </tr>
+                <tr class="font-poppins font-size-14">
+                    <td>Price </td>
+                    <td class="font-size-16 text-danger">$<span>20</span><small class="text-dark font-size-12">&nbsp;&nbsp;VAT inclusive</small></td>
+                </tr>
+                <tr class="font-poppins font-size-14">
+                    <td>Save </td>
+                    <td><span class="font-size-12 text-danger">$30</span></td>
+                </tr>
+            </table>
+            <!-- price -->
+
+            <!-- Policy -->
+            <div id="policy">
+                <div class="d-flex">
+                    <div class="return text-center">
+                        <div class="font-size-20 color-secondary">
+                            <span class="fas fa-retweet border rounded-pill"></span>
+                        </div>
+                        <a href="#" class="font-poppins font-size-12"> 7 days <br> Return</a>
+                    </div>
+                    <div class="delivery text-center px-5">
+                        <div class="font-size-20 color-secondary">
+                            <span class="fas fa-truck border rounded-pill"></span>
+                        </div>
+                        <a href="#" class="font-poppins font-size-12">Delivered</a>
+                    </div>
+                    <div class="warranty text-center">
+                        <div class="font-size-20 color-secondary">
+                            <span class="fas fa-check-double border rounded-pill"></span>
+                        </div>
+                        <a href="#" class="font-poppins font-size-12">1 year <br> warranty</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Policy -->
+            <!-- Order Details -->
+            <div id="order-details" class="font-poppins d-flex flex-column text-dark">
+                <small>Delivered by: Sept 5-7 </small>
+                <small> Sold by <a href="#">McMusonda</a></small>
+                <small><i class="fas fa-map-marker-alt color-primary"></i>&nbsp;&nbsp;Deliver to customer</small>
+            </div>
+            <!-- Order Details -->
+
+            <div class="row">
+                <div class="col-6">
+                    <!-- Color -->
+                    <div class="color my-3">
+                        <div class="d-flex justify-content-between">
+                            <h6 class="">Color</h6>
+                            <div class="p-2 color-third-bg rounded-circle"><button class="btn font-size-14"></button></div>
+                            <div class="p-2 color-third-bg rounded-circle"><button class="btn font-size-14"></button></div>
+                            <div class="p-2 color-third-bg rounded-circle"><button class="btn font-size-14"></button></div>
+                            <div class="p-2 color-third-bg rounded-circle"><button class="btn font-size-14"></button></div>
+                        </div>
+                    </div>
+                    <!-- Color -->
+                </div>
+
+                <div class="col-6">
+                    <!--Qty  -->
+                    <div class="d-flex my-3">
+                        <h6 class="px-2">Qty </h6>
+                        <button class="qty-up border bg-light"><i class="fas fa-angle-up"></i></button>
+                        <input type="text" class="qty_input border px-2 w-25 bg-light" disabled value="1" placeholder="1">
+                        <button class="qty-up border bg-light"><i class="fas fa-angle-down"></i></button>
+                    </div>
+                    <!--Qty  -->
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-6 py-5">
+            <hr>
+          <h3>Product Details</h3>
+          <p>welcome, enjoy!</p>
+        </div>
+      <!-- Product Details -->
+      </div>
+
+          
+    </div>
+    <!-- Products -->
+    
+
+
+
+    <!-- Footer -->
+    <footer id="footer" class="py-5 text-white bg-dark">
+    <div class="container">
+        <div class="row">
+        <div class="col-sm-3">
+            <h5>Hello</h5>
+        </div>
+        <div class="col-sm-3">
+            <h5>Social Media</h5>
+        </div>
+        <div class="col-sm-3">
+            <h5>Newsletter</h5>
+        </div>
+        <div class="col-sm-3">
+            <h5>About</h5>
+        </div>
+        </div>
+    </div>
+    
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/all.js"></script>
+
+    <!-- Owl Carousel Js file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha256-pTxD+DSzIwmwhOqTFN+DB+nHjO4iAsbgfyFq5K5bcE0=" crossorigin="anonymous"></script>
+
+    <!--  isotope plugin cdn  -->
+    <script src="/js/isotope.pkgd.min.js"></script>
+
+    <!-- Custom Javascript -->
+    <script src="index.js"></script>
+
+    <!-- Custom JS -->
+</body>
+</html>
