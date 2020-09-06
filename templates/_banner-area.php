@@ -17,7 +17,7 @@
     <img src="assets/flat-design-banner-ecommerce-website-600w-1171540555.jpg" alt="Banner" width="100%" height="500px">
   </div>
   <div class="carousel-item">
-    <img src="assests/1.jpg" alt="Banner" width="100%" height="500px">
+    <img src="assets/1.jpg" alt="Banner" width="100%" height="500px">
   </div>
 </div>
 

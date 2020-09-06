@@ -77,13 +77,13 @@
                   <a href="#" class="nav-link dropbtn text-dark">Account</a>
                   <div class="dropdown-content">
                     <a href="#">Profile</a>
-                    <a href="#">Watchlist (0)</a>
+                    <a href="#">Wishlist (0)</a>
                     <a href="#">History</a>
                   </div>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"></a>
+                <a class="nav-link text-dark" href="#">Sell</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"></a>

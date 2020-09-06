@@ -3,17 +3,17 @@
 // fetch banner_ad2 data
 class Banner_ad2
 {
-    public $db = null;
+    public $database = null;
 
-    public function __construct(DBController $db)
+    public function __construct(DBController $database)
     {
-        if(!isset($db->con)) return null;
-        $this->db =$db;
+        if(!isset($database->con)) return null;
+        $this->database =$database;
     }
 
     // getData Method
     public function getData($table = 'Banner_ad2'){
-        $result = $this->db->con->query("SELECT * FROM ($table)");
+        $result = $this->database->con->query("SELECT * FROM ($table)");
 
         $resultArray = array();
 

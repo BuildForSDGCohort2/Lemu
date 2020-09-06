@@ -1,4 +1,4 @@
-<?php require_once('includes/header.php');?>
+<?php include('includes/header.php');?>
 
 <?php
 
@@ -11,4 +11,4 @@
     // Popular Categories
 ?>
 
-<?php require_once('includes/footer.php')?>
+<?php include('includes/footer.php')?>
