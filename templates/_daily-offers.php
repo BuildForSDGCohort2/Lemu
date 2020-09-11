@@ -1,8 +1,8 @@
 <?php
-$daily_shuffle = $daily->getData();
+$check = getDataD();
 ?>
 <?php
-$category = array_map(function($pro){return $pro['category'];}, $daily_shuffle);
+$category = array_map(function($pro){return $pro['category'];}, $check);
 $unique = array_unique($category);
 sort($unique);
 
@@ -24,7 +24,7 @@ sort($unique);
             <div class="grid-item border <?php echo $item['category'] ?? "Category" ; ?>">
                 <div class="item py-2" style="width: 200px;">
                     <div class="product">
-                        <a href="<?php printf('%s?item_id=%s', 'product.php',  $item['item_id']); ?>"><img src="<?php echo $item['item_image'] ?? "./assets/products/3.jpg"; ?>" alt="product1" class="img-fluid"></a>
+                        <a href="<?php printf('%s?item_id=%s', 'products.php',  $item['item_id']); ?>"><img src="<?php echo $item['item_image'] ?? "./assets/products/3.jpg"; ?>" alt="product1" class="img-fluid"></a>
                         <div class="text-center">
                             <h6><?php echo $item['item_name'] ?? "Unknown"; ?></h6>
                             <div class="price py-2">
@@ -34,6 +34,6 @@ sort($unique);
                     </div>
                 </div>
             </div>
-            <?php }, $daily_shuffle) ?>
+            <?php }, $check) ?>
         </div>
     </div><br>

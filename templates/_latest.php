@@ -1,6 +1,6 @@
 <!-- Latest -->
 <?php
-$latest_shuffle = $latest->getData();
+$check = getDataL();
 ?>
 
 <div id="latest" class="container py-4 card">
@@ -8,10 +8,10 @@ $latest_shuffle = $latest->getData();
     <hr>
     <!-- owl carousel -->
       <div class="owl-carousel owl-theme">
-      <?php foreach ($latest_shuffle as $item) {?>
+      <?php foreach ($check as $item) {?>
         <div class="item py-2">
           <div class="product font-poppins" >
-          <a href="#"><img src="<?php echo $item['item_image'] ?? "assets/products/2.jpg";?>" alt="product1" class="img-fluid"></a>
+          <a href="<?php printf('%s?item_id=%s', 'products.php',  $item['item_id']); ?>"><img src="<?php echo $item['item_image'] ?? "assets/products/2.jpg";?>" alt="product1" class="img-fluid"></a>
             <div class="text-center">
               <h6><?php echo $item['item_name'] ?? "Unknown";?></h6>
               <div class="price py-2">

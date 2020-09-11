@@ -1,20 +1,54 @@
 <!-- Products -->
+<?php
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+        $cart->addToCart($_POST['user_id'],$_POST['item_id']);
+        // wishlist
+        if (isset($_POST['wishlist'])){
+            $cart->addtoWishilist($_POST['item_id']);
+        }
+    }
+    $item_id = $_GET['item_id'] ?? 1;
+    foreach (getData() as $item) :
+        if ($item['item_id'] == $item_id) :
+?>
 <div id="products" class="container card py-1">
     <div class="row container justify-content-center">
-        <div class="col-sm-4">
-        <img src="assets/products/1.jpg" alt="product1" class="img-fluid" style="height: 400px; width: 300px;">
+        <div class="col-sm-5">
+        <img src="<?php echo $item['item_image'] ?? "assets/products/1.png";?>" alt="product1" class="img-fluid" style="height: 400px; width: 300px;">
                 <div class="form-row pt-4 font-size-16 font-poppins">
                     <div class="col">
-                        <button type="submit" class="btn btn-danger form-control">Proceed to buy</button>
+                    <form method="post">
+                        
+                        <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? 1;?>">
+                        <input type="hidden" name="user_id" value="<?php echo 1;?>">
+                        <?php
+                            if(in_array($item['item_id'], getWishlistid(getData('Wishlist')) ?? [])){
+                                echo '<button type="submit" disabled class="btn btn-success form-control">In wishlist</button>';
+                            }else{
+                                echo '<button type="submit" name="wishlist" class="btn btn-warning form-control">Add to Wishlist</button>';
+                            }
+                        ;?>
+                        </form>
                     </div>
                     <div class="col">
-                        <button type="submit" class="btn btn-warning form-control">Add to cart</button>
+                        <form method="post">
+                        
+                        <input type="hidden" name="item_id" value="<?php echo $item['item_id'] ?? 1;?>">
+                        <input type="hidden" name="user_id" value="<?php echo 1;?>">
+                        <?php
+                            if(in_array($item['item_id'], getCartid(getData('Cart')) ?? [])){
+                                echo '<button type="submit" disabled class="btn btn-success form-control">In the cart</button>';
+                            }else{
+                                echo '<button type="submit" name="submit" class="btn btn-warning form-control">Add to cart</button>';
+                            }
+                        ;?>
+                        </form>
                     </div>
                 </div>
         </div>
         <div class="col-sm-4 py-3">
-        <h5 class="font-poppins font-size-20">Blender</h5>
-        <small>by LG</small>
+        <h5 class="font-poppins font-size-20 font-weight-bold"><?php echo $item['item_name'] ?? "Unknown";?></h5>
+        <small>by <?php echo $item['item_brand'] ?? "Unknown";?></small>
         <hr class="m-0">
 
         <!-- price -->
@@ -25,7 +59,7 @@
             </tr>
             <tr class="font-poppins font-size-14">
                 <td>Price </td>
-                <td class="font-size-16 text-danger">$<span>20</span><small class="text-dark font-size-12">&nbsp;&nbsp;VAT inclusive</small></td>
+                <td class="font-size-16 text-danger">$<span><?php echo $item['item_price'] ?? 0;?></span><small class="text-dark font-size-12">&nbsp;&nbsp;VAT inclusive</small></td>
             </tr>
             <tr class="font-poppins font-size-14">
                 <td>Save </td>
@@ -87,9 +121,13 @@
     <!-- Product Details -->
     <div class="py-5">
         <hr>
-        <h3>Product Details</h3>
-        <p>welcome, enjoy!</p>
+        <h4 class="font-weight-bold">Product Details</h4>
+        <p><?php echo $item['item_description'] ?? welcome;?></p>
     </div>
     <!-- Product Details -->
 </div><br>
 <!-- Products -->
+<?php
+        endif;
+        endforeach;
+?>

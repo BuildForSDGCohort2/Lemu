@@ -13,28 +13,44 @@
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Animate on Scroll -->
-    <link rel="stylesheet" href="css/aos.css">
 
-    <?php require('includes/functions.php');?>
+    <?php require('includes/functions.php');
+    require('functions/config.php');?>
     <title>Lemu Online Store</title>
 </head>
 <body>
+
     <!-- header section -->
     <header id="header" >
         <div class="strip d-flex justify-content-between px-5 py-1 bg-light navbar-expand-md">
-            <p class="text-black-50 m-0">Hi there, new to Lemu<a href="#" class="px-3 boder-right boarder-left text-dark">Sign In</a> or <a href="#" class="px-3 boder-right boarder-left text-dark">Login</a> <a href="#" class="px-3 boder-right boarder-left text-dark">Help and Contact</a></p>
-                <form action="#" class="font-size-14 font-poppins">
-                    <a class="py-2 rounded-pill bg-warning" href="#">
+          <?php
+          if(isset($_SESSION['Username']) || isset($_COOKIE['email'])){
+          ?>
+            <p class="text-black-50 m-0">Welcome, <?php echo $_SESSION['Username'];?></p>
+          <?php
+          }
+          else
+          {
+          ?>
+
+            <p class="text-black-50 m-0">Hi there, new to Lemu
+            <a href="#" class="px-3 boder-right boarder-left text-dark"  data-toggle="modal" data-target="#sign-up">Sign In </a> or 
+            <a href="#" class="px-3 boder-right boarder-left text-dark" data-toggle="modal" data-target="#login">Login</a></p>
+          <?php
+          }
+          ?>
+            
+                <form class="font-size-14 font-poppins">
+                    <a class="py-2 rounded-pill bg-warning" href="cart.php">
                         <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
-                        <span class="px-3 py-2 rounded-pill text-dark bg-light">0</span>
+                        <span class="px-3 py-2 rounded-pill text-dark bg-light"><?php echo count(getData('Cart'));?></span>
                     </a>
                 </form>
         </div>
         <!-- Navbar Section -->
         <div class="container" id="nav">
           <nav class="navbar navbar-expand-sm color-fourth-bg navbar-light">
-            <a class="navbar-brand" href="#">Lemu<i class="fa fa-cart-plus"></i></a>
+            <a class="navbar-brand" href="index.php">Lemu<i class="fa fa-cart-plus"></i></a>
             <div class="container justify-content-center">
               <div class="boxContainer">
                 <table class="elementContainer">
@@ -71,11 +87,29 @@
     
               <li class="nav-item">
                 <div class="dropdown">
-                  <a href="#" class="nav-link dropbtn text-dark">Account</a>
-                  <div class="dropdown-content">
+                <a href="#" class="nav-link dropbtn text-dark">Account</a>
+                <div class="dropdown-content">
+                <?php
+
+                if(isset($_SESSION['Username']) || isset($_COOKIE['email'])){
+                ?>
+                  
+                  
                     <a href="#">Profile</a>
-                    <a href="#">Wishlist (0)</a>
+                    <a href="cart.php">Wishlist (<span><?php echo count(getData('Wishlist'));?></span>)</a>
                     <a href="#">History</a>
+                    <a href="logout.php">Logout</a>
+                <?php
+                }
+                else
+                {
+                ?>
+                <div class="container px-2">
+                  <a href="login.php">Login</a>
+                </div>
+                <?php
+                }
+                ?>
                   </div>
                 </div>
               </li>
