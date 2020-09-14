@@ -570,7 +570,6 @@ function user_validation()
     }
 
     
-
     // Calculate subtotal
     function getSum($arr){
         if(isset($arr)){

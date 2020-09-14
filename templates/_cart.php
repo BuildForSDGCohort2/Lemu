@@ -34,9 +34,9 @@
                         <small>by <?php echo $item['item_brand'] ?? 'brand' ;?></small>
                         <div class="qty d-flex pt-2">
                             <div class="d-flex w-25">
-                                <button class="qty-up border bg-light" data-id="<?php echo $item['item_id'] ?? '0';?>"><i class="fas fa-angle-up"></i></button>
+                                <button class="qty-up border bg-light" data-id="<?php echo $item['item_id'] ?? '0'; ?>"><i class="fas fa-angle-up"></i></button>
                                 <input type="text" class="qty_input border px-2 w-50" data-id="<?php echo $item['item_id'] ?? '0';?>" disabled value="1" placeholder="1">
-                                <button class="qty-down border bg-light" data-id="<?php echo $item['item_id'] ?? '0';?>"><i class="fas fa-angle-down"></i></button>
+                                <button class="qty-down border bg-light" data-id="<?php echo $item['item_id'] ?? '0'; ?>"><i class="fas fa-angle-down"></i></button>
                             </div>
                             <form method="post">
                             <input type="hidden" value="<?php echo $item['item_id'] ?? 0 ;?>" name="item_id">
@@ -67,7 +67,7 @@
                 <div class="sub-total border text-center mt-2">
                     <h6 class="font-size-12 text-success py-3"><i class="fas fa-check"></i> Your order is eligible for Delivery.</h6>
                     <div class="border-top py-4">
-                        <h5 class="font-size-20">Subtotal (<?php echo isset($subTotal) ? count($subTotal) : 0; ?> item):&nbsp; <span class="text-danger">$<span class="text-danger" id="deal-price">0</span> </span> </h5>
+                        <h5 class="font-size-20">Subtotal ( <?php echo isset($subTotal) ? count($subTotal) : 0; ?> item):&nbsp; <span class="text-danger">$<span class="text-danger" id="deal-price"><?php echo isset($subTotal) ? getSum($subTotal) : 0; ?></span> </span> </h5>
                         <button type="submit" class="btn btn-success mt-3">Proceed to Buy</button>
                     </div>
                 </div>
