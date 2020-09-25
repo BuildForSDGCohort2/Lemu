@@ -34,7 +34,7 @@
           ?>
 
             <p class="text-black-50 m-0">Hi there, new to Lemu
-            <a href="#" class="px-3 boder-right boarder-left text-dark"  data-toggle="modal" data-target="#sign-up">Sign In </a> or 
+            <a href="#" class="px-3 boder-right boarder-left text-dark"  data-toggle="modal" data-target="#sign-up">Sign Up </a> or 
             <a href="#" class="px-3 boder-right boarder-left text-dark" data-toggle="modal" data-target="#login">Login</a></p>
           <?php
           }
@@ -104,8 +104,9 @@
                 else
                 {
                 ?>
-                <div class="container px-2">
+                <div class="container">
                   <a href="login.php">Login</a>
+                  <a href="register.php">Sign-Up</a>
                 </div>
                 <?php
                 }

@@ -44,14 +44,10 @@ button, button:focus {
 .font-size-20 {
   font-size: 20px;
 }
-
-<<<<<<< HEAD
 .font-size-24 {
   font-size: 24px;
 }
 
-=======
->>>>>>> 5df1086b97821621620dfd3f7d81bd484ec5f806
 .color-primary {
   color: #003859;
 }
@@ -91,12 +87,9 @@ button, button:focus {
 }
 
 /*  popular-category template   */
-<<<<<<< HEAD
 #popular .container {
   padding-top: 10px;
 }
-=======
->>>>>>> 5df1086b97821621620dfd3f7d81bd484ec5f806
 #popular .owl-carousel .item .product a {
   overflow: hidden;
 }
@@ -130,7 +123,6 @@ button, button:focus {
   margin-right: -4rem;
 }
 
-<<<<<<< HEAD
 #footer .row h5 {
   font-size: 16px;
   font-weight: bold;
@@ -256,7 +248,6 @@ li a:hover, .dropdown:hover .dropbtn {
   outline: none;
 }
 
-=======
 .Searched {
   margin: auto;
   position: relative;
@@ -291,6 +282,4 @@ li a:hover, .dropdown:hover .dropbtn {
 .footer {
   padding-top: 1px;
 }
-
->>>>>>> 5df1086b97821621620dfd3f7d81bd484ec5f806
 /*# sourceMappingURL=style.css.map */

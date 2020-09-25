@@ -8,39 +8,38 @@
           <div class="col-sm-3">
             <div class="help d-flex flex-column text-white">
               <h5>HELP & CONTACT</h5>
-              <a href="#">Help Center</a>
-              <a href="#">Seller Information Center</a>
-              <a href="#">Payment Methods</a>
-              <a href="#">Delivery</a>
-              <a href="#">Return Policy</a>
+              <a href="#" target="_black">Help Center</a>
+              <a href="#" target="_black">Payment Methods</a>
+              <a href="#" target="_black">Delivery</a>
+              <a href="#" target="_black">Return Policy</a>
               <a href="#" data-toggle="modal" data-target="#report">Report a Product</a>
-              <a href="#">Contact us</a>
+              <a href="#" target="_black">Contact us</a>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="social d-flex flex-column text-white">
               <h5>STAY CONNECTED</h5>
-              <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
-              <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
-              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
-              <a href="#"><i class="fab fa-whatsapp "></i> WhatsApp</a>
+              <a href="https://www.facebook.com/Lemu-111323424060264" target="_black"><i class="fab fa-facebook"></i> Facebook</a>
+              <a href="http://instagram.com" target="_black"><i class="fab fa-instagram"></i> Instagram</a>
+              <a href="http://twitter.com" target="_black"><i class="fab fa-twitter"></i> Twitter</a>
+              <a href="https://wa.me/256726049503" target="_black"><i class="fab fa-whatsapp "></i> WhatsApp</a>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="d-flex flex-column text-white">
               <h5>ABOUT</h5>
-              <a href="#">About us</a>
-              <a href="#">Terms and Conditions</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Advertise with us</a>
+              <a href="#" target="_black">About us</a>
+              <a href="#" target="_black">Terms and Conditions</a>
+              <a href="#" target="_black">Privacy Policy</a>
+              <a href="#" target="_black">Advertise with us</a>
             </div>
           </div>
           <div class="col-sm-3">
             <div class="d-flex flex-column text-white">
               <h5>BE UPDATED</h5>
-              <a href="#">Announcements</a>
-              <a href="#">Blogs</a>
-              <a href="#">Stay Safe</a>
+              <a href="#" target="_black">Announcements</a>
+              <!-- <a href="#" target="_black">Blogs</a> -->
+              <a href="#" target="_black">Stay Safe</a>
             </div>
           </div>
         </div>

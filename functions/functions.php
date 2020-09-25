@@ -187,7 +187,7 @@ function user_validation()
             $Password = md5($pass);
             $Validation_code = md5($Username + microtime());
 
-            $sql = "insert into user (FirstName,LastName,Username,Email,Password,Validation_Code,Active) values ('$Firstname','$Lastname','$Username','$Email','$Password','$Validation_code','0')";
+            $sql = "insert into user (FirstName,LastName,Username,Email,Password,Validation_Code,Role,Active) values ('$Firstname','$Lastname','$Username','$Email','$Password','$Validation_code','user','0')";
 
             $result = Query($sql);
             confirm($result);
@@ -293,7 +293,21 @@ function user_validation()
              {
                  return false;
              }
+
+             $roles = "SELECT Role FROM user WHERE username='$Username' AND password='$Userpass'";
+             $roles = Query($query);
+             $row = mysqli_fetch_array($roles);
+
+             if ($row['Role'] == "admin"){
+                 $_SESSION['admin'] = $Username;
+                 redirect('admin.php');
+             }
+             elseif($row['role'] == "user"){
+                 $_SESSION['user'] = $Username;
+                 redirect(index.php);
+             }
          }
+
     }
 
     // Logged in
